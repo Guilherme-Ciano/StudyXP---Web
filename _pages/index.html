@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../_imagens/Sem título.ico" type="image/x-icon" sizes="16x16">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../_styles/style_HomePage.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    
+    <title>StudyXP</title>
+</head>
+<body>
+        
+    <div class="background_gradient"> </div>
+
+    <header>
+        <h1>Study XP</h1>
+        <h3>Suba de nível do conforto da sua casa</h3>
+    </header>
+    
+    <main>
+        <img src="../_imagens/Logo_Study.png" alt="Logo" />
+
+        <div id="lineUp" display="true" ></div>
+    
+        <div class="right_section">
+            <form method="POST" id="login" style="padding-left: 20px; padding-top: 10px;" >
+                <div class="input-field">
+                    <label class="form-label"><i>Digite seu Email:</i></label>
+                    <input type="email" id="email" placeholder="exemplo@gmail.com" class="form-input-section" required>
+                </div>
+    
+                <div class="input-field">
+                    <label class="form-label"><i>Digite sua Senha:</i></label>
+                    <input type="password" id="password" class="form-input-section" placeholder="********" id="input_pass_section" required>
+                </div>
+
+                <div class="Input-UserType">
+                    <label class="form-label">Entrar como:</label>
+                    <select class="form-select" id="serie">
+                        <option selected>Aluno</option>
+                        <option class="option" value="1">Professor</option>
+                    </select>
+                </div>
+
+                <div class="botoes">
+                    <button class="button" id="Login" onClick="sendConfirm()">Login</button>
+                    <a class="button" id="Cadastro" href = 'signIn_Aluno.html'>Cadastrar-se</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="../_scripts/components/checkUser.js"></script>
+</body>
+</html>

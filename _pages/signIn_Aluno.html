@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../_imagens/Sem título.ico" type="image/x-icon" sizes="16x16"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../_styles/signIn.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    
+    <title>Study XP</title>
+</head>
+<body>
+    <header>
+        <h1>Study XP</h1>
+        <h3>Suba de nível do conforto da sua casa</h3>
+    </header>
+    <div class="background-gradient"></div>
+    <div class="form-div">
+        
+        <form id="form-aluno">
+          <h1>Cadastrar-se</h1>
+            <div class="input-field">
+                <label class="form-label">Digite seu Nome Completo:</label>
+                <input type="text" id="name" class="form-input-section" placeholder=" Digite seu nome aqui..." required>
+            </div>
+
+              <div class="input-field">
+                <label class="form-label">Digite seu Telefone:</label>
+                <input type="text" id="phone" class="form-input-section" placeholder=" Digite seu telefone aqui..." required>
+              </div>
+
+            <div class="input-field">
+              <label class="form-label">Digite seu Email:</label>
+              <input type="email" id="email" placeholder="Digite seu email aqui..." class="form-input-section" required>
+            </div>
+
+            <div class="input-field">
+              <label class="form-label">Crie uma Senha:</label>
+              <input type="password" id="password" class="form-input-section" placeholder="Crie um senha..." id="input_pass_section" required>
+            </div>
+
+            <div class="Input_grade">
+                <label class="form-label">Insira a sua Série:</label>
+                <select class="form-select" id="serie">
+                  <option selected>Aguardando valor...</option>
+                  <option class="option" value="1">1° ano</option>
+                  <option class="option" value="2">2° ano</option>
+                  <option class="option" value="3">3° ano</option>
+                </select>
+            </div>
+
+            <div class="Input_checkbox">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" class="checkbox-input" id="checkbox-input" checked="unchecked">
+                <span class="checkbox" id="checkbox"></span>
+              </div>
+              <label class="Sample_Text">Concordo e Aceito os Termos de Uso</label>
+            </div>
+              
+
+            <button class="button" onClick="sendForm()">Enviar</button>
+          </form>
+    </div>
+
+    <script src="../_scripts/components/checkbox.js"></script>
+    <script src="../_scripts/components/Aluno_submit.js"></script>
+</body>
+</html>

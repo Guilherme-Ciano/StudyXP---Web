@@ -1,0 +1,98 @@
+:root {
+    --white: #F5F5F5;
+    --pink: #EF476F;
+    --light-blue: #C3DFE0;
+    --blue: #1768AC;
+    --dark-blue: #03256C;
+}
+
+/* Globais */
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--white);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+button, textarea, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Div Modal */
+div.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.modal p {
+    margin-left: 12px;
+
+    color: var(--blue);
+}
+
+div.hidden {
+    display: none;
+}
+
+/* Main */
+main {
+    max-width: 1272px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Nav */
+
+main nav#nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main nav#nav-bar div.profile-photo {
+    background: url('../_imagens/download.jpg');
+    background-size: cover;
+
+    width: 123.26px;
+    height: 115px;
+    
+    border: 1px solid var(--dark-blue);
+    border-radius: 50%;
+}
+
+main nav#nav-bar div.profile {
+    text-align: center;
+}
+ 
+main nav#nav-bar div.profile div.profile-info {
+    
+}
+
+main nav#nav-bar div.profile div.profile-info span {
+    display: block;
+}
+
+/* Header Repositories */
+header {
+
+}
