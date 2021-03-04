@@ -13,3 +13,5 @@
 <p>Ao professor, é permitido um controle sobre os alunos, organização por salas e matérias, criação de lives, tarefas, provas, e nosso sistema único de recompensa: o <b><i>XP</i></b></p>
 
 ### O que é o "XP"?
+
+<p>É a forma do aluno ser recompensado por sua entrega ao conteúdo lecionado. Ele ganha uma experiencia referente a cada tarefa, trabalho ou prova que realizar e pode ser beneficiado pela escola em que estuda, ao atingir grandes níveis</p>
