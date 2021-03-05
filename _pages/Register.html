@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../_imagens/Sem título.ico" type="image/x-icon" sizes="16x16"> 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../_styles/signIn.css">
+    <link rel="stylesheet" href="../_styles/Register.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +33,16 @@
     <div class="form-div">
         
         <form id="form-aluno">
-          <h1>Cadastrar-se</h1>
+          <h1>Cadastro</h1>
+
+          <div class="Input-grade" style="margin-bottom: 10px;">
+            <label class="form-label">Cadastrar-se como:</label>
+            <select class="form-select" id="UserType">
+                <option selected value="0">Aluno</option>
+                <option class="option" value="1">Professor</option>
+            </select>
+          </div>
+
             <div class="input-field">
                 <label class="form-label">Digite seu Nome Completo:</label>
                 <input type="text" id="name" class="form-input-section" placeholder=" Digite seu nome aqui..." required>
@@ -73,7 +82,7 @@
             </div>
               
 
-            <button class="button" onClick="sendForm()">Enviar</button>
+              <button class="button" onClick="sendForm()">Enviar</button>
           </form>
     </div>
 

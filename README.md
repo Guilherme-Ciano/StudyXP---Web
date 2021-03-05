@@ -9,7 +9,7 @@
 
 ### O que é o <i>Study XP</i> ?
 
-<p> É um sistema voltado ao uso em escolas, que permite, ao aluno, ter um controle de suas atividades, provas, notas, grade escolar, chamadas de vídeo, chat interativo e também o <b><i> sistema de recompensa por nível (XP)<i><b></p>
+<p> É um sistema voltado ao uso em escolas, que permite, ao aluno, ter um controle de suas atividades, provas, notas, grade escolar, chamadas de vídeo, chat interativo e também o <b><i> sistema de recompensa por nível (XP)</i><b></p>
 <p>Ao professor, é permitido um controle sobre os alunos, organização por salas e matérias, criação de lives, tarefas, provas, e nosso sistema único de recompensa: o <b><i>XP</i></b></p>
 
 ### O que é o "XP"?

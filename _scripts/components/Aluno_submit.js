@@ -6,6 +6,7 @@ $('#form-aluno').submit(function(e){
 
 async function sendForm() {
     const aluno = {
+        type: $('#UserType').val(),
         name: $('#name').val(),
         email: $('#email').val(),
         phone: $('#phone').val(),

@@ -1,16 +1,17 @@
 :root {
     --white: #F5F5F5;
+    --gray: #e6e6e6;
+
+    --color_init_blue: #5070B1;
+    --color_end_blue: #AFF4D4;
+
     --pink: #EF476F;
     --light-blue: #C3DFE0;
     --blue: #1768AC;
     --dark-blue: #03256C;
 }
 
-body {
-    background-image: url(../_imagens/Background_Web_Aluno.png);
-    background-size: 100%;
-}
-
+/* Tela de carregamento inicial */
 div.modal {
     position: absolute;
     top: 0;
@@ -25,6 +26,7 @@ div.modal {
 }
 
 div.modal p {
+    margin-top: 15px;
     margin-left: 12px;
 
     color: var(--blue);
@@ -34,25 +36,52 @@ div.hidden {
     display: none;
 }
 
+/* gradiente de fundo */
+.background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+
+    background-image: linear-gradient(to right, var(--color_init_blue), var(--color_end_blue));
+}
+
+/* Troca da fonte do Bootstrap */
+.container-fluid h1 {
+    font-size: 28pt;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+}
+
+/* Posicionamento do menu lateral */
 #menu_lateral {
-    position: fixed;
-    left: 5px;
-    top: 10px;
-    bottom: 5px;
+    display: block;
     width: 191px;
-    height: 720px;
+    /* height: 720px; */
+    min-height: calc(100vh - 78.8px);
     margin-top: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 #foto_perfil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
     background: url('../_imagens/download.jpg');
     background-size: cover;
-    position: absolute;
+
+    margin-left: 16%;
+
     width: 123.26px;
     height: 115px;
-    /* width: auto;
-    height: auto; */
+
     left: 35px;
     top: 30px;
     
@@ -72,38 +101,49 @@ div.hidden {
 }
 
 #info_perfil {
-    position: absolute;
+    display: inline-block;
+
+    align-items: center;
+
     width: 166.57px;
     height: 75px;
-    left: 10px;
-    top: 145px;
+
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
 #info_perfil h3, span {
     font-family: 'Libre Baskerville', serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8pt;
+    font-size: 12pt;
+
     line-height: 14px;
+
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+
+    align-items: left;
+    text-align: left;
+    justify-content: left;
 
     color: #000000;
 }
 
 #linha_divisoria {
-    position: absolute;
+    display: block;
+
     width: 191px;
     height: 0px;
+
     left: 0px;
     top: 220px;
+
     color: black;
 }
 
 #diario_classe {
-    position: absolute;
+    display: block;
+
     width: 191px;
     height: 43px;
     left: 0px;
@@ -113,7 +153,7 @@ div.hidden {
 }
 
 #diario_classe h3 {
-    position: absolute;
+    display: flex;
     width: 191px;
     height: 25px;
     left: 33px;
@@ -123,96 +163,35 @@ div.hidden {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 30px;
-    display: flex;
+
+    padding-top: 15px;
+
+    text-decoration: none;
+
     align-items: center;
     text-align: center;
+    justify-content: center;
     
     color: #000000;
 }
 
-#Top_Section {
-    position: absolute;
-    width: 1100px;
-    height: 55px;
-    left: 205px;
-    top: 0px;
-}
-
-#repositorio {
-    position: absolute;
-    width: 550px;
-    height: 55px;
-    left: 0px;
-    top: 11px;
-    
-    background: #3B42EA;
-    border-radius: 5px;
-}
-
-#repositorio h3 {
-    position: absolute;
-    width: 400px;
-    height: 35px;
-    left: 100px;
-    top: -27px;
-    
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #FFFFFF;
-}
-
-#prof {
-    position: absolute;
-    width: 558.01px;
-    height: 55px;
-    left: 580px;
-    top: 11px;
-
-    background: #3B42EA;
-    border-radius: 5px;
-}
-
-#prof h3 {
-    position: absolute;
-    width: 0px;
-    height: 55px;
-    left: 210px;
-    top: -37px;
-    
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #FFFFFF;
-    
+a.link {
+    text-decoration: none;
 }
 
 #Area_tarefas {
-    position: absolute;
+    display: flex;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1100px;
-    height: 935px;
-    left: 209px;
-    top: 77px;
+
+    margin-top: 30%;
+
 }
 
 .tarefa-wrapper {
-    position: absolute;
+    display: flex;
     width: 1133px;
     height: 175px;
     left: 0px;
@@ -336,4 +315,10 @@ div.modal {
 
 div.hidden {
     display: none;
+}
+
+@media (max-width: 990px) {
+    #menu_lateral {
+        display: none;
+    }
 }
