@@ -53,7 +53,7 @@ header h1 {
     /* align-items: center; */
     justify-content: center;
 
-    margin-top: -5%;
+    margin-top: -10%;
 }
 
 .form-div form {
@@ -198,6 +198,16 @@ span.checked {
 
 span.checkbox:hover {
     background-color: var(--color_end);
+}
+
+/* Sumindo com as divs dos alunos quando for selecionado o professor */
+.hidden-aluno {
+    display: none;
+}
+
+/* Aparecendo as divs especificas dos professores */
+.professor {
+    display: none;
 }
 
 @media only screen and (max-width: 1024px) {

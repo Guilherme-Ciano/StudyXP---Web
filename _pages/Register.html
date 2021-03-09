@@ -38,14 +38,19 @@
           <div class="Input-grade" style="margin-bottom: 10px;">
             <label class="form-label">Cadastrar-se como:</label>
             <select class="form-select" id="UserType">
-                <option selected value="0">Aluno</option>
-                <option class="option" value="1">Professor</option>
+                <option selected value="1" onClick="window.location.reload()">Aluno</option>
+                <option class="option" value="2" onClick="window.location.reload()">Professor</option>
             </select>
           </div>
 
             <div class="input-field">
                 <label class="form-label">Digite seu Nome Completo:</label>
                 <input type="text" id="name" class="form-input-section" placeholder=" Digite seu nome aqui..." required>
+            </div>
+
+            <div class="input-field variavel"  >
+              <label class="form-label">Digite seu RA:</label>
+              <input type="text" id="ra" class="form-input-section" placeholder=" Exemplo: 0000000-6" required>
             </div>
 
               <div class="input-field">
@@ -63,15 +68,29 @@
               <input type="password" id="password" class="form-input-section" placeholder="Crie um senha..." id="input_pass_section" required>
             </div>
 
-            <div class="Input_grade">
+            <div class="Input_grade variavel">
                 <label class="form-label">Insira a sua Série:</label>
-                <select class="form-select" id="serie">
+                <select class="form-select" id="serie" required>
                   <option selected>Aguardando valor...</option>
                   <option class="option" value="1">1° ano</option>
                   <option class="option" value="2">2° ano</option>
                   <option class="option" value="3">3° ano</option>
                 </select>
             </div>
+
+            <div class="Input_grade professor">
+              <label class="form-label">Insira sua Matéria:</label>
+              <select class="form-select" id="materia" required>
+                <option class="option" value="1">Matemática</option>
+                <option class="option" value="2">Química</option>
+                <option class="option" value="3">Física</option>
+                <option class="option" value="4">Literatura</option>
+                <option class="option" value="5">Português</option>
+                <option class="option" value="6">Sociologia</option>
+                <option class="option" value="7">Filosofia</option>
+                <option class="option" value="8">Outra</option>
+              </select>
+          </div>
 
             <div class="Input_checkbox">
               <div class="checkbox-wrapper">
@@ -82,11 +101,13 @@
             </div>
               
 
-              <button class="button" onClick="sendForm()">Enviar</button>
+              <button class="button variavel" onClick="sendForm_Aluno()">Enviar</button>
+              <button class="button professor" onClick="sendForm_Prof()">Enviar</button>
           </form>
     </div>
 
     <script src="../_scripts/components/checkbox.js"></script>
+    <script src="../_scripts/components/Selector_UserType.js"></script>
     <script src="../_scripts/components/Aluno_submit.js"></script>
 </body>
 </html>
